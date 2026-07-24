@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_cyber">#090D16</color>
+    <color name="bg_card">#0B0E17</color>
+    <color name="border_slate">#1E293B</color>
+    <color name="accent_teal">#06B6D4</color>
+    <color name="accent_teal_dark">#0D9488</color>
+    <color name="text_slate">#64748B</color>
+    <color name="text_light">#E2E8F0</color>
+    <color name="error_red">#EF4444</color>
+</resources>
