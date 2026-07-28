@@ -1,0 +1,78 @@
+{
+  "title": "LUNG-NET Selenium & Appium Automated Test Execution Report",
+  "timestamp": "2026-07-28T11:58:54.063486",
+  "duration_seconds": 0.0,
+  "summary": {
+    "total": 8,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 7,
+    "pass_rate": "12.5%"
+  },
+  "tests": [
+    {
+      "test_name": "test_01_selenium_framework_availability",
+      "full_id": "tests.test_selenium_web.TestSeleniumWebUI.test_01_selenium_framework_availability",
+      "category": "Selenium Web",
+      "status": "SKIPPED",
+      "duration_seconds": 0.0,
+      "details": "Selenium package not installed in local environment (installed in CI workflow via requirements-test.txt)"
+    },
+    {
+      "test_name": "test_02_web_app_loading_and_title",
+      "full_id": "tests.test_selenium_web.TestSeleniumWebUI.test_02_web_app_loading_and_title",
+      "category": "Selenium Web",
+      "status": "SKIPPED",
+      "duration_seconds": 0.0,
+      "details": "Chrome WebDriver not initialized in environment"
+    },
+    {
+      "test_name": "test_03_dashboard_header_elements",
+      "full_id": "tests.test_selenium_web.TestSeleniumWebUI.test_03_dashboard_header_elements",
+      "category": "Selenium Web",
+      "status": "SKIPPED",
+      "duration_seconds": 0.0,
+      "details": "Chrome WebDriver not initialized in environment"
+    },
+    {
+      "test_name": "test_04_responsive_layout",
+      "full_id": "tests.test_selenium_web.TestSeleniumWebUI.test_04_responsive_layout",
+      "category": "Selenium Web",
+      "status": "SKIPPED",
+      "duration_seconds": 0.0,
+      "details": "Chrome WebDriver not initialized in environment"
+    },
+    {
+      "test_name": "test_01_appium_environment_and_apk_existence",
+      "full_id": "tests.test_appium_mobile.TestAppiumMobileAPK.test_01_appium_environment_and_apk_existence",
+      "category": "Appium Mobile",
+      "status": "SKIPPED",
+      "duration_seconds": 0.0,
+      "details": "Appium-Python-Client not installed in local environment (installed in CI workflow via requirements-test.txt)"
+    },
+    {
+      "test_name": "test_02_apk_metadata_validation",
+      "full_id": "tests.test_appium_mobile.TestAppiumMobileAPK.test_02_apk_metadata_validation",
+      "category": "Appium Mobile",
+      "status": "PASSED",
+      "duration_seconds": 0.0,
+      "details": "Test executed successfully."
+    },
+    {
+      "test_name": "test_03_appium_mobile_session_launch",
+      "full_id": "tests.test_appium_mobile.TestAppiumMobileAPK.test_03_appium_mobile_session_launch",
+      "category": "Appium Mobile",
+      "status": "SKIPPED",
+      "duration_seconds": 0.0,
+      "details": "Appium Server or Android Emulator not active in execution environment"
+    },
+    {
+      "test_name": "test_04_webview_mobile_container",
+      "full_id": "tests.test_appium_mobile.TestAppiumMobileAPK.test_04_webview_mobile_container",
+      "category": "Appium Mobile",
+      "status": "SKIPPED",
+      "duration_seconds": 0.0,
+      "details": "Appium Server or Android Emulator not active in execution environment"
+    }
+  ]
+}

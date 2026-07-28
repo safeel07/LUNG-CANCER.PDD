@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LUNG-NET-E2E-Suite" tests="8" failures="0" skipped="7" time="0.0">
+  <testcase classname="Selenium Web" name="test_01_selenium_framework_availability" time="0.0">
+    <skipped message="Selenium package not installed in local environment (installed in CI workflow via requirements-test.txt)"/>
+  </testcase>
+  <testcase classname="Selenium Web" name="test_02_web_app_loading_and_title" time="0.0">
+    <skipped message="Chrome WebDriver not initialized in environment"/>
+  </testcase>
+  <testcase classname="Selenium Web" name="test_03_dashboard_header_elements" time="0.0">
+    <skipped message="Chrome WebDriver not initialized in environment"/>
+  </testcase>
+  <testcase classname="Selenium Web" name="test_04_responsive_layout" time="0.0">
+    <skipped message="Chrome WebDriver not initialized in environment"/>
+  </testcase>
+  <testcase classname="Appium Mobile" name="test_01_appium_environment_and_apk_existence" time="0.0">
+    <skipped message="Appium-Python-Client not installed in local environment (installed in CI workflow via requirements-test.txt)"/>
+  </testcase>
+  <testcase classname="Appium Mobile" name="test_02_apk_metadata_validation" time="0.0">
+  </testcase>
+  <testcase classname="Appium Mobile" name="test_03_appium_mobile_session_launch" time="0.0">
+    <skipped message="Appium Server or Android Emulator not active in execution environment"/>
+  </testcase>
+  <testcase classname="Appium Mobile" name="test_04_webview_mobile_container" time="0.0">
+    <skipped message="Appium Server or Android Emulator not active in execution environment"/>
+  </testcase>
+</testsuite>

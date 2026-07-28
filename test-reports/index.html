@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUNG-NET Selenium & Appium Automated Test Execution Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: system-ui, -apple-system, sans-serif; }
+        .card { background-color: #1e293b; border: 1px solid #334155; border-radius: 12px; }
+        .table { color: #cbd5e1; vertical-align: middle; }
+        .table-dark { --bs-table-bg: #1e293b; }
+        .badge-success { background-color: #059669; color: #ffffff; padding: 6px 12px; border-radius: 6px; }
+        .badge-warning { background-color: #d97706; color: #ffffff; padding: 6px 12px; border-radius: 6px; }
+        .badge-danger { background-color: #dc2626; color: #ffffff; padding: 6px 12px; border-radius: 6px; }
+        .stat-card { padding: 20px; text-align: center; border-radius: 10px; background: #090d16; border: 1px solid #1e293b; }
+        .stat-num { font-size: 2.2rem; font-weight: 700; margin-bottom: 0; }
+        .stat-label { color: #94a3b8; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+    </style>
+</head>
+<body class="py-4">
+    <div class="container">
+        <div class="card p-4 mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                    <h2 class="fw-bold mb-1" style="color: #38bdf8;">🧪 LUNG-NET E2E Automation Report</h2>
+                    <p class="text-secondary mb-0">Selenium Web UI & Appium Mobile Test Pipeline Execution</p>
+                </div>
+                <div class="text-end">
+                    <span class="badge bg-primary fs-6">2026-07-28T11:58:54.063486</span>
+                </div>
+            </div>
+            
+            <div class="row g-3 my-2">
+                <div class="col-md-2">
+                    <div class="stat-card">
+                        <p class="stat-num text-info">8</p>
+                        <p class="stat-label">Total Tests</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="stat-card">
+                        <p class="stat-num text-success">1</p>
+                        <p class="stat-label">Passed</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="stat-card">
+                        <p class="stat-num text-warning">7</p>
+                        <p class="stat-label">Skipped</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="stat-card">
+                        <p class="stat-num text-danger">0</p>
+                        <p class="stat-label">Failed</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <p class="stat-num text-warning">12.5%</p>
+                        <p class="stat-label">Pass Rate (0.0s)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card p-4">
+            <h4 class="mb-3 fw-bold" style="color: #94a3b8;">Detailed Test Case Execution Breakdown</h4>
+            <div class="table-responsive">
+                <table class="table table-dark table-hover align-middle">
+                    <thead>
+                        <tr style="border-bottom: 2px solid #334155;">
+                            <th>Framework</th>
+                            <th>Test Method</th>
+                            <th>Status</th>
+                            <th>Duration</th>
+                            <th>Execution Log / Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td><strong>Selenium Web</strong></td>
+            <td><code>test_01_selenium_framework_availability</code></td>
+            <td><span class="badge badge-warning">SKIPPED</span></td>
+            <td>0.0s</td>
+            <td class="text-muted">Selenium package not installed in local environment (installed in CI workflow via requirements-test.txt)</td>
+        </tr>
+        
+        <tr>
+            <td><strong>Selenium Web</strong></td>
+            <td><code>test_02_web_app_loading_and_title</code></td>
+            <td><span class="badge badge-warning">SKIPPED</span></td>
+            <td>0.0s</td>
+            <td class="text-muted">Chrome WebDriver not initialized in environment</td>
+        </tr>
+        
+        <tr>
+            <td><strong>Selenium Web</strong></td>
+            <td><code>test_03_dashboard_header_elements</code></td>
+            <td><span class="badge badge-warning">SKIPPED</span></td>
+            <td>0.0s</td>
+            <td class="text-muted">Chrome WebDriver not initialized in environment</td>
+        </tr>
+        
+        <tr>
+            <td><strong>Selenium Web</strong></td>
+            <td><code>test_04_responsive_layout</code></td>
+            <td><span class="badge badge-warning">SKIPPED</span></td>
+            <td>0.0s</td>
+            <td class="text-muted">Chrome WebDriver not initialized in environment</td>
+        </tr>
+        
+        <tr>
+            <td><strong>Appium Mobile</strong></td>
+            <td><code>test_01_appium_environment_and_apk_existence</code></td>
+            <td><span class="badge badge-warning">SKIPPED</span></td>
+            <td>0.0s</td>
+            <td class="text-muted">Appium-Python-Client not installed in local environment (installed in CI workflow via requirements-test.txt)</td>
+        </tr>
+        
+        <tr>
+            <td><strong>Appium Mobile</strong></td>
+            <td><code>test_02_apk_metadata_validation</code></td>
+            <td><span class="badge badge-success">PASSED</span></td>
+            <td>0.0s</td>
+            <td class="text-muted">Test executed successfully.</td>
+        </tr>
+        
+        <tr>
+            <td><strong>Appium Mobile</strong></td>
+            <td><code>test_03_appium_mobile_session_launch</code></td>
+            <td><span class="badge badge-warning">SKIPPED</span></td>
+            <td>0.0s</td>
+            <td class="text-muted">Appium Server or Android Emulator not active in execution environment</td>
+        </tr>
+        
+        <tr>
+            <td><strong>Appium Mobile</strong></td>
+            <td><code>test_04_webview_mobile_container</code></td>
+            <td><span class="badge badge-warning">SKIPPED</span></td>
+            <td>0.0s</td>
+            <td class="text-muted">Appium Server or Android Emulator not active in execution environment</td>
+        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
