@@ -19,13 +19,49 @@ except Exception:
 
 # Set professional layout parameters
 st.set_page_config(
+
     page_title="LUNG-NET Swin 3D Diagnostics Cockpit",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+st.markdown("""
+<style>
+#MainMenu { visibility: hidden; }
+header { visibility: hidden; }
+footer { visibility: hidden; }
+
+[data-testid="stToolbar"] {
+    display: none;
+}
+
+[data-testid="stDecoration"] {
+    display: none;
+}
+
+[data-testid="stStatusWidget"] {
+    display: none;
+}
+
+[data-testid="stSidebarNav"] {
+    display: none;
+}
+
+button[kind="header"] {
+    display: none;
+}
+
+.viewerBadge_container__1QSob,
+.styles_viewerBadge__1yB5_,
+.viewerBadge_link__1S137,
+.viewerBadge_text__1JaDK {
+    display: none !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # Custom Clinical Matte-Slate Stylesheets (Emoji-free premium theme)
 st.markdown("""
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
     
@@ -422,7 +458,7 @@ def render_plotly_3d_volume(volume, heatmap, isomin_ct=0.20, isomin_cam=0.35, vi
 # Title Block
 st.markdown("""
 <div class="cockpit-title-card">
-    <div class="cockpit-header">LUNG-NET SWIN 3D CLINICAL COCKPIT</div>
+    <div class="cockpit-header">ONCOFUSION AI</div>
     <div class="cockpit-subheader">
         Multi-Modal Lung Cancer Risk Stratification Powered by 3D Shifted-Window Swin-Transformers & Cross-Attention
     </div>
