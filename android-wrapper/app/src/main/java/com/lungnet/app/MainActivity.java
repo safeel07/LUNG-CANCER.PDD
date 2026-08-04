@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String PREF_NAME = "lungnet_prefs";
     private static final String KEY_SERVER_URL = "server_url";
-    private static final String DEFAULT_URL = "https://lung-net.streamlit.app";
+    private static final String DEFAULT_URL = "https://oncofusion-ai.streamlit.app";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

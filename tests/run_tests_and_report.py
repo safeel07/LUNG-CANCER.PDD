@@ -25,7 +25,7 @@ def run_test_suite_and_generate_report():
     suite.addTest(loader.loadTestsFromTestCase(TestAppiumMobileAPK))
 
     print("==================================================================")
-    print("      EXECUTING LUNG-NET E2E TEST SUITE (SELENIUM + APPIUM)      ")
+    print("    EXECUTING ONCOFUSION AI E2E TEST SUITE (SELENIUM + APPIUM)   ")
     print("==================================================================")
 
     results_details = []
@@ -87,7 +87,7 @@ def run_test_suite_and_generate_report():
 
     # 1. Save JSON Report
     json_report = {
-        "title": "LUNG-NET Selenium & Appium Automated Test Execution Report",
+        "title": "OncoFusion AI Selenium & Appium Automated Test Execution Report",
         "timestamp": start_timestamp,
         "duration_seconds": elapsed_total,
         "summary": {
@@ -108,7 +108,7 @@ def run_test_suite_and_generate_report():
     xml_path = os.path.join(output_dir, "junit.xml")
     with open(xml_path, "w") as f:
         f.write(f'<?xml version="1.0" encoding="UTF-8"?>\n')
-        f.write(f'<testsuite name="LUNG-NET-E2E-Suite" tests="{total_tests}" failures="{total_failed}" skipped="{total_skipped}" time="{elapsed_total}">\n')
+        f.write(f'<testsuite name="OncoFusion-AI-E2E-Suite" tests="{total_tests}" failures="{total_failed}" skipped="{total_skipped}" time="{elapsed_total}">\n')
         for item in results_details:
             f.write(f'  <testcase classname="{item["category"]}" name="{item["test_name"]}" time="{item["duration_seconds"]}">\n')
             if item["status"] == "SKIPPED":
@@ -172,7 +172,7 @@ def generate_html_report(data):
         <div class="card p-4 mb-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <div>
-                    <h2 class="fw-bold mb-1" style="color: #38bdf8;">🧪 LUNG-NET E2E Automation Report</h2>
+                    <h2 class="fw-bold mb-1" style="color: #38bdf8;">🧪 OncoFusion AI E2E Automation Report</h2>
                     <p class="text-secondary mb-0">Selenium Web UI & Appium Mobile Test Pipeline Execution</p>
                 </div>
                 <div class="text-end">

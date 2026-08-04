@@ -20,7 +20,7 @@ except Exception:
 # Set professional layout parameters
 st.set_page_config(
 
-    page_title="LUNG-NET Swin 3D Diagnostics Cockpit",
+    page_title="OncoFusion AI",
     layout="wide",
     initial_sidebar_state="expanded"
 )

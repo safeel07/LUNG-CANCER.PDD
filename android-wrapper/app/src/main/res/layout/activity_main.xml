@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="LUNG-NET"
+                android:text="OncoFusion AI"
                 android:textColor="@color/accent_teal"
                 android:textSize="28sp"
                 android:textStyle="bold"
@@ -102,7 +102,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LUNG-NET SERVER ENDPOINT"
+                    android:text="ONCOFUSION AI SERVER ENDPOINT"
                     android:textColor="@color/text_slate"
                     android:textSize="11sp"
                     android:textStyle="bold"
@@ -112,7 +112,7 @@
                     android:id="@+id/edit_server_url"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="https://lung-net.streamlit.app"
+                    android:hint="https://oncofusion-ai.streamlit.app"
                     android:textColorHint="@color/text_slate"
                     android:inputType="textUri"
                     android:padding="12dp"

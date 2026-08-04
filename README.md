@@ -1,13 +1,13 @@
-# LUNG-NET: Unified Multimodal Lung Cancer Risk Stratification Platform
+# OncoFusion AI: Unified Multimodal Lung Cancer Risk Stratification Platform
 
 [![Streamlit App](https://static.streamlit.io/badge_svg.svg)](https://share.streamlit.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)
 
-LUNG-NET is an institutional-grade, FDA-compliant clinical artificial intelligence diagnostic suite designed to stratify lung cancer malignancy risk. By fusing 3D pulmonary CT scan volumes or standard 2D diagnostic scan images with discrete genomic biomarkers (EGFR, KRAS, ALK mutations) and clinical patient exposures (Age, Smoking Pack-Years), the platform delivers highly accurate, explainable risk assessments.
+OncoFusion AI is an institutional-grade, FDA-compliant clinical artificial intelligence diagnostic suite designed to stratify lung cancer malignancy risk. By fusing 3D pulmonary CT scan volumes or standard 2D diagnostic scan images with discrete genomic biomarkers (EGFR, KRAS, ALK mutations) and clinical patient exposures (Age, Smoking Pack-Years), the platform delivers highly accurate, explainable risk assessments.
 
-LUNG-NET integrates a dual-view clinical PACS workstation featuring a stunning dark "Cyber-Glow" 3D lung volume visualizer, an automated 2D CV-based segmentation workspace that processes any user-uploaded scan image, and an interactive diagnostic report compiler following official Fleischner Society guidelines.
+OncoFusion AI integrates a dual-view clinical PACS workstation featuring a stunning dark "Cyber-Glow" 3D lung volume visualizer, an automated 2D CV-based segmentation workspace that processes any user-uploaded scan image, and an interactive diagnostic report compiler following official Fleischner Society guidelines.
 
 ---
 
@@ -22,7 +22,7 @@ LUNG-NET integrates a dual-view clinical PACS workstation featuring a stunning d
     *   **Grad-CAM XAI:** An explainable AI thermal heatmap overlay displaying deep multi-scale sequence weights and structural activations.
 
 ### 🩸 Fractal Vascular & Capillary Network Generator
-Rather than utilizing basic static lines, LUNG-NET incorporates a **recursive fractal branching vascular tree generator** that dynamically populates the lobes with hundreds of organic branches, tapering them mathematically, and overlaying a micro-capillary mesh to achieve a remarkably detailed, biologically realistic 3D pulmonary lung structure.
+Rather than utilizing basic static lines, OncoFusion AI incorporates a **recursive fractal branching vascular tree generator** that dynamically populates the lobes with hundreds of organic branches, tapering them mathematically, and overlaying a micro-capillary mesh to achieve a remarkably detailed, biologically realistic 3D pulmonary lung structure.
 
 ---
 
@@ -48,7 +48,7 @@ medical-proj/
 
 ## 🧠 Deep AI Architecture & Multi-Modal Fusion
 
-LUNG-NET models patient diagnostic risk by replacing traditional concatenation layers with active attention gating.
+OncoFusion AI models patient diagnostic risk by replacing traditional concatenation layers with active attention gating.
 
 ```mermaid
 graph TD
@@ -82,7 +82,7 @@ This models spatial susceptibility gating dynamically (e.g. weighting specific n
 
 ## 📈 Clinical Decision Support & Fleischner Rules
 
-LUNG-NET integrates official Fleischner Society guidelines to translate classification output into actionable recommendations:
+OncoFusion AI integrates official Fleischner Society guidelines to translate classification output into actionable recommendations:
 *   **Low Risk (Nodule < 6mm or extremely low demographics):** Recommends optional CT follow-up at 12 months in patients with high-risk clinical factors.
 *   **Medium Risk (6mm - 8mm nodule, moderate history):** Recommends scheduled follow-up CT at 6-12 months, followed by an additional scan at 18-24 months if stable.
 *   **High Risk (Nodule > 8mm or high clinical suspicion):** Recommends immediate biopsy, FDG-PET/CT scan, or surgical resection.
@@ -95,8 +95,8 @@ The platform includes a **self-healing master bootstrap script** (`run.py`). Upo
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/your-username/medical-proj.git
-cd medical-proj
+git clone https://github.com/safeel07/LUNG-CANCER.PDD.git
+cd LUNG-CANCER.PDD
 ```
 
 ### Step 2: Launch the System Orchestrator
@@ -109,7 +109,7 @@ This single command runs all checks, sets up the workspace, generates neural net
 
 ## ☁️ Streamlit Community Cloud Deployment
 
-LUNG-NET is fully optimized for Streamlit Community Cloud out-of-the-box:
+OncoFusion AI is fully optimized for Streamlit Community Cloud out-of-the-box:
 1.  **Memory Optimization (OOM Prevention):** Enforces dynamic memory monitoring. If PyTorch imports threaten the strict 1.0 GB container limit, the dashboard switches automatically to a high-fidelity diagnostic engine, maintaining 100% server uptime.
 2.  **Ready Entrypoints:** The repository places `streamlit_app.py` and `main.py` at the root for immediate automatic app detection on Streamlit dashboard setup.
 

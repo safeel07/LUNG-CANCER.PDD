@@ -21,7 +21,7 @@ def check_system_libraries():
     }
     
     print("=" * 60)
-    print("LUNG-NET UNIFIED DIAGNOSTIC PLATFORM BOOTSTRAP")
+    print("ONCOFUSION AI DIAGNOSTIC PLATFORM BOOTSTRAP")
     print("=" * 60)
     
     for module_name, pip_name in required_packages.items():
@@ -88,7 +88,7 @@ def main():
     precompile_model_checkpoints()
     
     app_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "app_clinical_system.py")
-    print(f"\n[LAUNCHING] Starting LUNG-NET Unified dashboard on {app_path}...\n")
+    print(f"\n[LAUNCHING] Starting OncoFusion AI dashboard on {app_path}...\n")
     
     try:
         # Launch Streamlit cockpit programmatically

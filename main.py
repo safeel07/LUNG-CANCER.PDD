@@ -19,7 +19,7 @@ except Exception:
 
 # Set professional layout parameters
 st.set_page_config(
-    page_title="LUNG-NET Swin 3D Diagnostics Cockpit",
+    page_title="OncoFusion AI",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -422,7 +422,7 @@ def render_plotly_3d_volume(volume, heatmap, isomin_ct=0.20, isomin_cam=0.35, vi
 # Title Block
 st.markdown("""
 <div class="cockpit-title-card">
-    <div class="cockpit-header">LUNG-NET SWIN 3D CLINICAL COCKPIT</div>
+    <div class="cockpit-header">ONCOFUSION AI</div>
     <div class="cockpit-subheader">
         Multi-Modal Lung Cancer Risk Stratification Powered by 3D Shifted-Window Swin-Transformers & Cross-Attention
     </div>

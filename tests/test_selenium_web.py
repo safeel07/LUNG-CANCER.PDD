@@ -17,7 +17,7 @@ except ImportError:
 
 class TestSeleniumWebUI(unittest.TestCase):
     """
-    Selenium End-to-End (E2E) Test Suite for LUNG-NET Web UI Dashboard
+    Selenium End-to-End (E2E) Test Suite for OncoFusion AI Web UI Dashboard
     """
     target_url = "http://localhost:8501"
     headless = True

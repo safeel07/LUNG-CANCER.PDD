@@ -23,7 +23,7 @@ from data.preprocessors import process_clinical_ingestion, generate_hounsfield_p
 
 # Page Configurations
 st.set_page_config(
-    page_title="LUNG-NET Unified Diagnostic Suite",
+    page_title="OncoFusion AI Diagnostic Suite",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -340,7 +340,7 @@ def plot_clinical_attribution(payload, volume):
 # Corporate Header
 st.markdown("""
 <div class="diagnostic-header">
-    <div class="diagnostic-title">LUNG-NET UNIFIED DIAGNOSTIC PLATFORM</div>
+    <div class="diagnostic-title">ONCOFUSION AI DIAGNOSTIC PLATFORM</div>
     <div class="diagnostic-subtitle">
         FDA Class II Diagnostic Framework: Multi-Stage Shifted Window Swin-Transformer & Gated Convolutional Fusion
     </div>

@@ -75,7 +75,7 @@ def find_gradle_bin():
 
 def main():
     print("=========================================")
-    print(" LUNG-NET STANDALONE APK BUILD PIPELINE ")
+    print(" ONCOFUSION AI STANDALONE APK BUILD PIPELINE ")
     print("=========================================")
 
     # Ensure build environment folder exists
