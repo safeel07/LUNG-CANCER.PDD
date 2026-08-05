@@ -1,0 +1,94 @@
+name: Security & Compliance Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  sast-analysis:
+    name: SAST (Semgrep)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Semgrep SAST
+        uses: semgrep/semgrep-action@v1
+        with:
+          config: p/default
+        continue-on-error: true
+
+      - name: Generate SAST Summary Report
+        run: |
+          mkdir -p security-reports
+          echo "Semgrep SAST Scan completed on $(date)" > security-reports/sast_report.txt
+
+      - name: Upload SAST Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sast-report
+          path: security-reports/
+
+  secret-detection:
+    name: Secret Scanning (Gitleaks)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+  dependency-vulnerabilities:
+    name: Dependency & FS Scanning (Trivy)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Trivy FS Scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+          format: 'table'
+          output: 'trivy-report.txt'
+        continue-on-error: true
+
+      - name: Upload Dependency Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dependency-trivy-report
+          path: trivy-report.txt
+
+  npm-audit-check:
+    name: Package Dependency Audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run NPM Audit
+        run: |
+          mkdir -p audit-reports
+          npm audit --json > audit-reports/npm_audit.json || true
+        continue-on-error: true
+
+      - name: Upload Audit Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-audit-report
+          path: audit-reports/
